@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+//paragraphs
+$very-light-gray: hsl(0, 0%, 95%);
+//background, headings, buttons
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.component {
+    display: flex;
+    position: relative;
+    
+}
+
+.col-sedans {
+    width: 360px;
+    height: 575px;
+    background: $bright-orange;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+
+.col-suvs {
+    width: 360px;
+    height: 575px;
+    background: $dark-cyan;
+}
+
+.col-luxury {
+    width: 360px;
+    height: 575px;
+    background: $very-dark-cyan;
+    border-radius: 0rem 1rem 1rem 0rem;
+}
+
+img {
+    margin: 3rem 0rem 0rem 3rem;
+}
+
+.col-header {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $very-light-gray;
+    margin: 2rem 0rem 2rem 3rem;
+}
+
+.col-content {
+    color: $very-light-gray;
+    opacity: 80%;
+    font-size: 1.1rem;
+    margin: 0rem 4rem 2rem 3rem;
+    line-height: 160%;
+}
+
+.btn-more {
+    margin: 0rem 0rem 3rem 3rem;
+    padding: 1rem 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background: $very-light-gray;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s opacity;
+}
+
+.btn-bright-orange {
+    color: $bright-orange;
+}
+
+.btn-dark-cyan {
+    color: $dark-cyan;
+}
+
+.btn-very-dark-cyan {
+    color: $very-dark-cyan;
+}
+
+.btn-more:hover {
+    opacity: 80%;
+}
+
+.btn-more:active {
+    opacity: 100%;
+    border: 1px solid $very-light-gray;
+}
+
+.btn-bright-orange:active {
+    color: $very-light-gray;
+    background: $bright-orange;
+}
+
+.btn-dark-cyan:active {
+    color: $very-light-gray;
+    background: $dark-cyan;
+}
+
+.btn-very-dark-cyan:active {
+    color: $very-light-gray;
+    background: $very-dark-cyan;
+}
