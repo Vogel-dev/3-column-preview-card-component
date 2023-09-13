@@ -16,6 +16,7 @@ $very-light-gray: hsl(0, 0%, 95%);
 }
 
 body {
+    width: 100%;
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
     position: absolute;
@@ -26,7 +27,8 @@ body {
 
 .component {
     display: flex;
-    position: relative;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -118,4 +120,36 @@ img {
 .btn-very-dark-cyan:active {
     color: $very-light-gray;
     background: $very-dark-cyan;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        top: 0%;
+        left: 0%;
+        transform: none;
+    }
+    
+    .component {
+        flex-direction: column;
+    }
+    
+    .col-sedans {
+        margin-top: 1rem;
+        height: 475px;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+    
+    .col-suvs {
+        height: 475px;
+    }
+    
+    .col-luxury {
+        height: 475px;
+        border-radius: 0rem 0rem 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+        
+    .btn-more {
+        position: relative;
+    }
 }
